@@ -2,39 +2,24 @@
 
 namespace ManejoTrabajadores.Entities
 {
-    public enum RoleUser
-    {
-        User, 
-        Admin
-    }
+  
     public class EntitieEmployee
     {
+        // Se le indica a la tabla que esta propiedad sera la Clave primaria en la DB.
         [Key] public int EmployeeId { get; set; }
-        public string IdentificationType { get; set; }
-        public string Names { get; set; }
-        public string LatsNames { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
+        public string IdentificationType { get; set; } = string.Empty;
+        public string Names { get; set; } = string.Empty;
+        public string LastNames { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Password{ get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
         public int ContractNumber { get; set; }
-        public string CityOfResidence { get; set; }
-        public string TechnicalRank { get; set; }
-        public string ExtensionRank { get; set; }
+        public string? CityOfResidence { get; set; }
+        public string? TechnicalRank { get; set; }
+        public string? ExtensionRank { get; set; }
+        public string Role { get; private set; } = "Employee"; // Por defecto
 
-        // Relación muchos a muchos con RoleUser a través de EmployeeRole
-        public List<EmployeeRole> EmployeeRoles { get; set; } = new List<EmployeeRole>();
-    }
-
-    public class EmployeeRole
-    {
-        [Key]
-        public int Id { get; set; }
-
-        // Llave foránea hacia EntitieEmployee
-        public int EmployeeId { get; set; }
-        public EntitieEmployee Employee { get; set; }
-
-        // Almacenar RoleUser como un valor enum
-        public RoleUser Role { get; set; }
 
     }
+
 }

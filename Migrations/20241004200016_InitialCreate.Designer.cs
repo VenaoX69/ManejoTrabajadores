@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ManejoTrabajadores.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241003231329_InitialCreate")]
+    [Migration("20241004200016_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,27 +23,6 @@ namespace ManejoTrabajadores.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ManejoTrabajadores.Entities.EmployeeRole", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EmployeeId");
-
-                    b.ToTable("EmployeeRole");
-                });
-
             modelBuilder.Entity("ManejoTrabajadores.Entities.EntitieEmployee", b =>
                 {
                     b.Property<int>("EmployeeId")
@@ -53,7 +32,6 @@ namespace ManejoTrabajadores.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"), 1L, 1);
 
                     b.Property<string>("CityOfResidence")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ContractNumber")
@@ -64,14 +42,13 @@ namespace ManejoTrabajadores.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ExtensionRank")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdentificationType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LatsNames")
+                    b.Property<string>("LastNames")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -79,33 +56,24 @@ namespace ManejoTrabajadores.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TechnicalRank")
+                    b.Property<string>("Role")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TechnicalRank")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("ManejoTrabajadores.Entities.EmployeeRole", b =>
-                {
-                    b.HasOne("ManejoTrabajadores.Entities.EntitieEmployee", "Employee")
-                        .WithMany("EmployeeRoles")
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Employee");
-                });
-
-            modelBuilder.Entity("ManejoTrabajadores.Entities.EntitieEmployee", b =>
-                {
-                    b.Navigation("EmployeeRoles");
                 });
 #pragma warning restore 612, 618
         }
