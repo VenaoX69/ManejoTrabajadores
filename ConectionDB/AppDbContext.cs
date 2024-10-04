@@ -7,5 +7,6 @@ namespace ManejoTrabajadores.ConectionDB
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { } // options son las configuraciones de conexion a la base de datos en el appsettings.json.
         public DbSet<EntitieEmployee> Employees { get; set; } = null!; // Conjunto de datos que representa la tabla de empleados en la base de datos.
+        public DbSet<EntitieAdmin> Admins { get; set; } = null!;
     }
 }

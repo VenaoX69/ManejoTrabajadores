@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\conectiondb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:conectiondb\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\dto\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:dto\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\dto\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:dto\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\entities\\entitieemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:entities\\entitieemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|c:\\workspaces\\net6\\pruebatrabajadores\\manejotrabajadores\\entities\\entitieadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B21249F3-325B-4E6B-B34A-50AF235A9DBB}|ManejoTrabajadores.csproj|solutionrelative:entities\\entitieadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserLogin.cs",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\DTO\\UserLogin.cs",
-              "RelativeDocumentMoniker": "DTO\\UserLogin.cs",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\DTO\\UserLogin.cs",
-              "RelativeToolTip": "DTO\\UserLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T16:48:05.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T19:41:18.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\ConectionDB\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ConectionDB\\AppDbContext.cs",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\ConectionDB\\AppDbContext.cs",
-              "RelativeToolTip": "ConectionDB\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "AdminLogin.cs",
+              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\DTO\\AdminLogin.cs",
+              "RelativeDocumentMoniker": "DTO\\AdminLogin.cs",
+              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\DTO\\AdminLogin.cs",
+              "RelativeToolTip": "DTO\\AdminLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T19:36:52.394Z",
+              "WhenOpened": "2024-10-04T21:03:24.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAADwv3oAAAAAAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowD8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T19:47:12.676Z",
+              "WhenOpened": "2024-10-04T20:32:32.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntitieEmployee.cs",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Entities\\EntitieEmployee.cs",
-              "RelativeDocumentMoniker": "Entities\\EntitieEmployee.cs",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Entities\\EntitieEmployee.cs",
-              "RelativeToolTip": "Entities\\EntitieEmployee.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAABNAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EntitieAdmin.cs",
+              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Entities\\EntitieAdmin.cs",
+              "RelativeDocumentMoniker": "Entities\\EntitieAdmin.cs",
+              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\Entities\\EntitieAdmin.cs",
+              "RelativeToolTip": "Entities\\EntitieAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T23:03:35.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\WorkSpaces\\Net6\\PruebaTrabajadores\\ManejoTrabajadores\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-03T19:21:06.063Z",
+              "WhenOpened": "2024-10-04T20:27:51.797Z",
               "EditorCaption": ""
             }
           ]
