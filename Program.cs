@@ -5,6 +5,18 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    });
+});
+
 // Configurar la autenticación de Jwt
 builder.Services.AddAuthentication(options => // Se configura el esquema de autenticación de la aplicación, que en este caso será JWT.
 {
@@ -49,6 +61,8 @@ if (app.Environment.IsDevelopment())
 app.UseAuthentication(); // Se indica que a la App que debe habilitar el middleware de autenticación. Cada solicitud intentará aunteticar al usuario si el recurso lo requiere.
 
 app.UseHttpsRedirection();
+//Habilitar CORS
+app.UseCors("AllowAngularApp");
 
 app.UseAuthorization();
 

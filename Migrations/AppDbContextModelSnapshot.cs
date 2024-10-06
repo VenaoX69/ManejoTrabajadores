@@ -71,6 +71,10 @@ namespace ManejoTrabajadores.Migrations
                     b.Property<string>("ExtensionRank")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Identificacion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("IdentificationType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

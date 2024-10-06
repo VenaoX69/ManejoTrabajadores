@@ -7,6 +7,7 @@ namespace ManejoTrabajadores.Entities
     {
         // Se le indica a la tabla que esta propiedad sera la Clave primaria en la DB.
         [Key] public int EmployeeId { get; set; }
+        public string Identificacion { get; set; }
         public string IdentificationType { get; set; } = string.Empty;
         public string Names { get; set; } = string.Empty;
         public string LastNames { get; set; } = string.Empty;
