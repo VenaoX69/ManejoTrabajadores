@@ -41,7 +41,7 @@ namespace ManejoTrabajadores.Controllers
             return employee;
         }
 
-        [HttpPost]
+        [HttpPost("add")]
         public async Task<ActionResult<EntitieEmployee>> CreateEmployee(EntitieEmployee employee) // Método para crear un nuevo empleado.
         {
             _context.Employees.Add(employee);
@@ -50,7 +50,7 @@ namespace ManejoTrabajadores.Controllers
             return CreatedAtAction(nameof(GetEmployee), new { id = employee.EmployeeId }, employee);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("update/{id}")]
         public async Task<ActionResult> UpdateEmployee(int id, EntitieEmployee employee) // Método para editar infor de un empleado.
         {
             if (id != employee.EmployeeId)

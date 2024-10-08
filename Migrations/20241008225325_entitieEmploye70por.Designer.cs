@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ManejoTrabajadores.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241008033112_AddUniqueConstraint")]
-    partial class AddUniqueConstraint
+    [Migration("20241008225325_entitieEmploye70por")]
+    partial class entitieEmploye70por
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -71,12 +71,10 @@ namespace ManejoTrabajadores.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ExtensionRank")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Identificacion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<long>("Identificacion")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("IdentificationType")
                         .IsRequired()
@@ -94,16 +92,14 @@ namespace ManejoTrabajadores.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Phone")
+                        .HasColumnType("int");
 
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TechnicalRank")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");

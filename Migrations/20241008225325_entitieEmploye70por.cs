@@ -4,7 +4,7 @@
 
 namespace ManejoTrabajadores.Migrations
 {
-    public partial class AddUniqueConstraint : Migration
+    public partial class entitieEmploye70por : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,17 +30,17 @@ namespace ManejoTrabajadores.Migrations
                 {
                     EmployeeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Identificacion = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Identificacion = table.Column<long>(type: "bigint", nullable: false),
                     IdentificationType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Names = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastNames = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<int>(type: "int", nullable: false),
                     ContractNumber = table.Column<int>(type: "int", nullable: false),
                     CityOfResidence = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TechnicalRank = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ExtensionRank = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TechnicalRank = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ExtensionRank = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

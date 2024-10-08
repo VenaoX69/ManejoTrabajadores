@@ -89,32 +89,6 @@
   },
   {
     "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
-    "Method": "CreateEmployee",
-    "RelativePath": "api/employee",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "employee",
-        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
     "Method": "GetEmployee",
     "RelativePath": "api/employee/{id}",
     "HttpMethod": "GET",
@@ -141,27 +115,6 @@
   },
   {
     "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
-    "Method": "UpdateEmployee",
-    "RelativePath": "api/employee/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "employee",
-        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
     "Method": "DeleteEmployee",
     "RelativePath": "api/employee/{id}",
     "HttpMethod": "DELETE",
@@ -178,6 +131,32 @@
   },
   {
     "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
+    "Method": "CreateEmployee",
+    "RelativePath": "api/employee/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
     "Method": "Login",
     "RelativePath": "api/employee/login",
     "HttpMethod": "POST",
@@ -187,6 +166,27 @@
       {
         "Name": "userLogin",
         "Type": "ManejoTrabajadores.DTO.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ManejoTrabajadores.Controllers.EmployeeController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "api/employee/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "employee",
+        "Type": "ManejoTrabajadores.Entities.EntitieEmployee",
         "IsRequired": true
       }
     ],
