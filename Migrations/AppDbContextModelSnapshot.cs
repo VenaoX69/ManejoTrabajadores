@@ -66,14 +66,15 @@ namespace ManejoTrabajadores.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ExtensionRank")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Identificacion")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("IdentificationType")
                         .IsRequired()
@@ -100,9 +101,19 @@ namespace ManejoTrabajadores.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TechnicalRank")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");
+
+                    b.HasIndex("ContractNumber")
+                        .IsUnique();
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Identificacion")
+                        .IsUnique();
 
                     b.ToTable("Employees");
                 });

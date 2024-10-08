@@ -50,7 +50,7 @@ namespace ManejoTrabajadores.Controllers
             return CreatedAtAction(nameof(GetEmployee), new { id = employee.EmployeeId }, employee);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> UpdateEmployee(int id, EntitieEmployee employee) // Método para editar infor de un empleado.
         {
             if (id != employee.EmployeeId)
@@ -77,7 +77,7 @@ namespace ManejoTrabajadores.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id) // Método para elminar un empleado.
         {
             var employee = await _context.Employees.FindAsync(id);
