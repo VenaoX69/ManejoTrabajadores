@@ -1,6 +1,7 @@
 ﻿using ManejoTrabajadores.ConectionDB;
 using ManejoTrabajadores.DTO;
 using ManejoTrabajadores.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -49,8 +50,14 @@ namespace ManejoTrabajadores.Controllers
         [HttpPost("loginAdmin")]
         public IActionResult Login([FromBody] AdminLogin adminLogin)
         {
-            var admin = Authenticate(adminLogin);
 
+            //Manejar campos requeridos
+            if (string.IsNullOrEmpty(adminLogin.Email) || string.IsNullOrEmpty(adminLogin.Password))
+            {
+                return BadRequest("Email y contraseña son requeridos.");
+            }
+
+            var admin = Authenticate(adminLogin);
             if (admin == null)
             {
                 return NotFound("Administrador no encontrado");
@@ -91,6 +98,14 @@ namespace ManejoTrabajadores.Controllers
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+
+        [HttpGet("adminData")]
+        public IActionResult GetAdminData()
+        {
+            // Solo los usuarios autenticados pueden acceder a esta ruta
+            return Ok("Datos del administrador");
         }
     }
 }
